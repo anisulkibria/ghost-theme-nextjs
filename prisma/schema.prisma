@@ -1,0 +1,153 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+model Theme {
+  id              String   @id @default(cuid())
+  name            String
+  description     String
+  fullDescription String?
+  price           Float
+  category        String
+  image           String
+  featured        Boolean  @default(false)
+  tags            String[]
+  layout          String?
+  browsers        String?
+  version         String?
+  ghostVersion    String?
+  features        String[]
+  screenshots     String[]
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+  demoLink        String?
+  purchaseLink    String?
+  
+  // SEO fields
+  seoTitle        String?
+  seoDescription  String?
+  seoKeywords     String[]
+  seoImage        String?
+  ogType          String   @default("product")
+  noIndex         Boolean  @default(false)
+
+  @@map("themes")
+}
+
+model BlogPost {
+  id              String         @id(map: "blog_posts_pkey") @default(cuid())
+  title           String
+  excerpt         String
+  content         String
+  readTime        String
+  category        String
+  image           String?
+  featured        Boolean        @default(false)
+  tags            String[]
+  publishedAt     DateTime       @default(now())
+  authorId        String?
+  documentationId String?
+  author          Author?        @relation(fields: [authorId], references: [id], map: "blog_posts_authorId_fkey")
+  documentation   Documentation? @relation(fields: [documentationId], references: [id], map: "blog_posts_documentationId_fkey")
+  
+  // SEO fields
+  seoTitle        String?
+  seoDescription  String?
+  seoKeywords     String[]
+  seoImage        String?
+  ogType          String   @default("article")
+  noIndex         Boolean  @default(false)
+
+  @@map("posts")
+}
+
+model Documentation {
+  id          String     @id(map: "documentation_pkey") @default(cuid())
+  title       String
+  description String
+  content     String
+  slug        String     @unique(map: "documentation_slug_key")
+  publishedAt DateTime   @default(now())
+  blogPosts   BlogPost[]
+
+  @@map("docs")
+}
+
+model Tag {
+  id          String   @id @default(cuid())
+  name        String   @unique
+  slug        String   @unique
+  description String?
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  @@map("tags")
+}
+
+model Author {
+  id        String     @id @default(cuid())
+  name      String
+  bio       String
+  avatar    String
+  url       String?
+  social    Json?
+  createdAt DateTime   @default(now())
+  updatedAt DateTime   @updatedAt
+  posts     BlogPost[]
+  
+  // SEO fields
+  seoTitle        String?
+  seoDescription  String?
+  seoKeywords     String[]
+  seoImage        String?
+  noIndex         Boolean  @default(false)
+
+  @@map("authors")
+}
+
+model Page {
+  id          String   @id @default(cuid())
+  title       String
+  slug        String   @unique
+  content     String
+  description String?
+  lastUpdated DateTime @updatedAt
+  published   Boolean  @default(true)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+  
+  // SEO fields
+  seoTitle        String?
+  seoDescription  String?
+  seoKeywords     String[]
+  seoImage        String?
+  ogType          String   @default("website")
+  noIndex         Boolean  @default(false)
+
+  @@map("pages")
+}
+
+model Subscriber {
+  id        String   @id @default(cuid())
+  email     String   @unique
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@map("subs")
+}
+
+model Contact {
+  id        String   @id @default(cuid())
+  name      String
+  email      String
+  subject   String
+  message   String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@map("contacts")
+}

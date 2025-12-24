@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://ghost-theme.com
+
+# Sitemaps
+Sitemap: https://ghost-theme.com/sitemap.xml
