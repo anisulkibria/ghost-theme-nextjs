@@ -1,5 +1,21 @@
+import { readFileSync } from 'fs';
 import { PrismaClient } from '@prisma/client';
 import { PrismaPg } from '@prisma/adapter-pg';
+
+// Load environment variables from .env.local
+try {
+  const envFile = readFileSync('.env.local', 'utf-8');
+  const lines = envFile.split('\n');
+  for (const line of lines) {
+    const [key, ...valueParts] = line.split('=');
+    if (key && valueParts.length > 0) {
+      const value = valueParts.join('=').replace(/^"|"$/g, '').trim();
+      process.env[key.trim()] = value;
+    }
+  }
+} catch (error) {
+  console.warn('Could not load .env.local file:', error);
+}
 
 // Use DATABASE_URL from environment variables
 const tcpConnectionString = process.env.DATABASE_URL;
