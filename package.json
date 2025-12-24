@@ -10,6 +10,7 @@
     "generate": "npx prisma generate",
     "migrate": "npx prisma migrate deploy",
     "db:seed": "tsx prisma/seed.ts",
+    "db:setup": "npm run migrate && npm run db:seed",
     "sitemap": "next-sitemap"
   },
   "prisma": {
