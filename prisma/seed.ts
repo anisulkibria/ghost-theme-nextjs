@@ -2,19 +2,34 @@ import { readFileSync } from 'fs';
 import { PrismaClient } from '@prisma/client';
 import { PrismaPg } from '@prisma/adapter-pg';
 
-// Load environment variables from .env.local
-try {
-  const envFile = readFileSync('.env.local', 'utf-8');
-  const lines = envFile.split('\n');
-  for (const line of lines) {
-    const [key, ...valueParts] = line.split('=');
-    if (key && valueParts.length > 0) {
-      const value = valueParts.join('=').replace(/^"|"$/g, '').trim();
-      process.env[key.trim()] = value;
+// Load environment variables from .env.local or .env
+function loadEnvFile(filename: string) {
+  try {
+    const envFile = readFileSync(filename, 'utf-8');
+    const lines = envFile.split('\n');
+    for (const line of lines) {
+      const trimmedLine = line.trim();
+      // Skip empty lines and comments
+      if (!trimmedLine || trimmedLine.startsWith('#')) continue;
+      
+      const [key, ...valueParts] = trimmedLine.split('=');
+      if (key && valueParts.length > 0) {
+        const value = valueParts.join('=').replace(/^"|"$/g, '').trim();
+        process.env[key.trim()] = value;
+      }
     }
+    console.log(`Loaded environment variables from ${filename}`);
+    return true;
+  } catch (error) {
+    return false;
   }
-} catch (error) {
-  console.warn('Could not load .env.local file:', error);
+}
+
+// Try to load from .env.local first, then .env, then use existing env vars
+if (!loadEnvFile('.env.local')) {
+  if (!loadEnvFile('.env')) {
+    console.log('Using existing environment variables');
+  }
 }
 
 // Use DATABASE_URL from environment variables
