@@ -3,6 +3,7 @@ import { notFound } from 'next/navigation';
 import PageTemplate from '@/components/PageTemplate';
 import SEO from '@/components/SEO';
 import { generatePageSEO } from '@/lib/seo';
+import prisma from '@/lib/prisma';
 
 interface PageProps {
   params: Promise<{
@@ -12,16 +13,14 @@ interface PageProps {
 
 async function getPage(slug: string) {
   try {
-    const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'http://localhost:3000';
-    const res = await fetch(`${baseUrl}/api/pages/${slug}`, {
-      cache: 'no-store',
+    const page = await prisma.page.findUnique({
+      where: {
+        slug: slug,
+        published: true,
+      },
     });
 
-    if (!res.ok) {
-      return null;
-    }
-
-    return res.json();
+    return page;
   } catch (error) {
     console.error('Error fetching page:', error);
     return null;

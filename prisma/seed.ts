@@ -2209,9 +2209,9 @@ For additional support with Asahi theme:
 
 const pages = [
   {
-    id: 'privacy-policy',
+    id: 'privacy',
     title: 'Privacy Policy',
-    slug: 'privacy-policy',
+    slug: 'privacy',
     description: 'Your privacy is important to us. It is Ghost Theme\'s policy to respect your privacy regarding any information we may collect from you.',
     content: `<p>
       Your privacy is important to us. It is Ghost Theme's policy to respect your privacy regarding any
@@ -2272,9 +2272,9 @@ const pages = [
     published: true
   },
   {
-    id: 'terms-of-service',
+    id: 'terms',
     title: 'Terms of Service',
-    slug: 'terms-of-service',
+    slug: 'terms',
     description: 'Terms and conditions for using Ghost Theme products and services.',
     content: `<h1>Terms of Service</h1>
     
@@ -2312,9 +2312,9 @@ const pages = [
     published: true
   },
   {
-    id: 'about-us',
+    id: 'about',
     title: 'About Us',
-    slug: 'about-us',
+    slug: 'about',
     description: 'Learn more about Ghost Theme and our mission to create beautiful, functional themes for publishers.',
     content: `<h1>About Ghost Theme</h1>
     
@@ -2426,6 +2426,124 @@ const pages = [
       123 Web Street<br>
       Tech City, TC 12345<br>
       United States
+    </p>`,
+    published: true
+  },
+  {
+    id: 'faqs',
+    title: 'Frequently Asked Questions',
+    slug: 'faqs',
+    description: 'Find answers to commonly asked questions about Ghost Theme products and services.',
+    content: `<h1>Frequently Asked Questions</h1>
+    
+    <p>
+      Welcome to our FAQ section. Here you'll find answers to common questions about our Ghost themes, licensing, support, and more.
+    </p>
+    
+    <h2>General Questions</h2>
+    
+    <h3>What is Ghost CMS?</h3>
+    <p>
+      Ghost is a modern, open-source publishing platform built on Node.js. It's designed to be simple, fast, and focused on creating and publishing content. Ghost is perfect for bloggers, journalists, and publishers who want a powerful yet easy-to-use platform.
+    </p>
+    
+    <h3>What are Ghost themes?</h3>
+    <p>
+      Ghost themes are templates that control how your Ghost site looks and functions. They determine the layout, design, and user experience of your publication. Our themes are professionally designed and optimized for performance and SEO.
+    </p>
+    
+    <h2>Purchasing & Licensing</h2>
+    
+    <h3>How do I purchase a theme?</h3>
+    <p>
+      Simply browse our collection of themes, select the one you like, and click the purchase button. You'll be redirected to our secure checkout where you can complete your purchase using various payment methods.
+    </p>
+    
+    <h3>What license do I get with my purchase?</h3>
+    <p>
+      Each theme purchase includes a single-site license. This allows you to use the theme on one Ghost installation. If you need to use the theme on multiple sites, please contact us for multi-site licensing options.
+    </p>
+    
+    <h3>Can I use the theme on multiple sites?</h3>
+    <p>
+      The standard license is for single-site use only. If you need to use the theme on multiple sites, you'll need to purchase additional licenses or contact us for a multi-site license at a discounted rate.
+    </p>
+    
+    <h2>Installation & Setup</h2>
+    
+    <h3>How do I install a Ghost theme?</h3>
+    <p>
+      Installing a Ghost theme is simple:
+    </p>
+    <ol>
+      <li>Download the theme ZIP file after purchase</li>
+      <li>Log in to your Ghost admin panel</li>
+      <li>Navigate to Settings → Design → Change theme</li>
+      <li>Click "Upload theme" and select the ZIP file</li>
+      <li>Click Activate to make it live</li>
+    </ol>
+    
+    <h3>Do I need coding skills to use these themes?</h3>
+    <p>
+      No! Our themes are designed to be user-friendly and work out of the box. However, if you want to customize the theme further, basic knowledge of HTML, CSS, and Handlebars (Ghost's templating language) would be helpful.
+    </p>
+    
+    <h3>What version of Ghost do I need?</h3>
+    <p>
+      Our themes are compatible with Ghost 5.0 and above. We regularly update our themes to ensure compatibility with the latest Ghost releases.
+    </p>
+    
+    <h2>Customization & Support</h2>
+    
+    <h3>Can I customize the theme?</h3>
+    <p>
+      Yes! All our themes are fully customizable. You can modify colors, fonts, layouts, and more. We provide documentation to help you with customization. For advanced customizations, you can also hire our team for custom development services.
+    </p>
+    
+    <h3>Do you provide support?</h3>
+    <p>
+      Absolutely! We provide comprehensive support for all our themes. This includes:
+    </p>
+    <ul>
+      <li>Documentation and setup guides</li>
+      <li>Email support for technical issues</li>
+      <li>Video tutorials</li>
+      <li>Community forum</li>
+    </ul>
+    
+    <h3>What if I find a bug or issue?</h3>
+    <p>
+      If you encounter any issues with our themes, please contact our support team with details about the problem. We'll work to resolve it as quickly as possible. Bug fixes and updates are provided free of charge.
+    </p>
+    
+    <h2>Updates & Refunds</h2>
+    
+    <h3>Do I get free updates?</h3>
+    <p>
+      Yes! All theme purchases include free updates for the life of the theme. We regularly release updates to add new features, fix bugs, and ensure compatibility with the latest Ghost version.
+    </p>
+    
+    <h3>What is your refund policy?</h3>
+    <p>
+      We offer a 14-day money-back guarantee on all theme purchases. If you're not satisfied with your purchase, contact us within 14 days for a full refund. No questions asked.
+    </p>
+    
+    <h3>How do I receive updates?</h3>
+    <p>
+      When we release updates, you'll receive an email notification. You can download the latest version from your account dashboard or from the email link. Simply upload the new version to your Ghost site to update.
+    </p>
+    
+    <h2>Still Have Questions?</h2>
+    <p>
+      Can't find the answer you're looking for? Don't hesitate to reach out to us:
+    </p>
+    <ul>
+      <li><strong>Email:</strong> <a href="mailto:support@ghost-theme.com">support@ghost-theme.com</a></li>
+      <li><strong>Twitter:</strong> <a href="https://twitter.com/ghosttheme">@ghosttheme</a></li>
+      <li><strong>GitHub:</strong> <a href="https://github.com/ghost-theme">ghost-theme</a></li>
+    </ul>
+    <p>
+      We typically respond to inquiries within 24-48 hours during business days.
     </p>`,
     published: true
   }

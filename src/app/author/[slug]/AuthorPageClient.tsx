@@ -238,9 +238,9 @@ export default function AuthorPageClient({ params }: { params: Promise<{ slug: s
               <div className="border-t border-slate-100 pt-6">
                 <div className="flex flex-wrap gap-x-4 gap-y-2 text-[11px] text-slate-400">
                   <Link href="/contact" className="hover:text-slate-600">Help</Link>
-                  <Link href="/page/about" className="hover:text-slate-600">About</Link>
-                  <Link href="/page/privacy" className="hover:text-slate-600">Privacy</Link>
-                  <Link href="/page/terms" className="hover:text-slate-600">Terms</Link>
+                  <Link href="/about" className="hover:text-slate-600">About</Link>
+                  <Link href="/privacy" className="hover:text-slate-600">Privacy</Link>
+                  <Link href="/terms" className="hover:text-slate-600">Terms</Link>
                 </div>
               </div>
             </aside>
