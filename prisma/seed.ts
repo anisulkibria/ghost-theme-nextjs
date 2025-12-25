@@ -2209,7 +2209,7 @@ For additional support with Asahi theme:
 
 const pages = [
   {
-    id: 'privacy',
+    id: 'privacy-policy',
     title: 'Privacy Policy',
     slug: 'privacy',
     description: 'Your privacy is important to us. It is Ghost Theme\'s policy to respect your privacy regarding any information we may collect from you.',
@@ -2272,7 +2272,7 @@ const pages = [
     published: true
   },
   {
-    id: 'terms',
+    id: 'terms-of-service',
     title: 'Terms of Service',
     slug: 'terms',
     description: 'Terms and conditions for using Ghost Theme products and services.',
@@ -2312,7 +2312,7 @@ const pages = [
     published: true
   },
   {
-    id: 'about',
+    id: 'about-us',
     title: 'About Us',
     slug: 'about',
     description: 'Learn more about Ghost Theme and our mission to create beautiful, functional themes for publishers.',
