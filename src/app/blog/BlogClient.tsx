@@ -152,17 +152,19 @@ export default function BlogClient() {
                     <div className="flex-1 order-2 md:order-1 flex flex-col justify-between">
                       <div>
                         <div className="flex items-center gap-2 mb-3">
-                          <div className="w-5 h-5 rounded-full bg-slate-200 overflow-hidden">
-                            <Image
-                              src={post.author?.avatar || "https://ui-avatars.com/api/?name=Anisul+Kibria&background=0D8ABC&color=fff"}
-                              alt={post.author?.name || "Author"}
-                              width={20}
-                              height={20}
-                            />
-                          </div>
-                          <span className="text-xs font-medium text-slate-900">
-                            {post.author?.name || 'Anisul Kibria'}
-                          </span>
+                          <Link href={`/author/${post.author?.id}`} className="flex items-center gap-2 hover:opacity-80 transition-opacity">
+                            <div className="w-5 h-5 rounded-full bg-slate-200 overflow-hidden">
+                              <Image
+                                src={post.author?.avatar || "https://ui-avatars.com/api/?name=Anisul+Kibria&background=0D8ABC&color=fff"}
+                                alt={post.author?.name || "Author"}
+                                width={20}
+                                height={20}
+                              />
+                            </div>
+                            <span className="text-xs font-medium text-slate-900">
+                              {post.author?.name || 'Anisul Kibria'}
+                            </span>
+                          </Link>
                           <span className="text-slate-300 mx-1">in</span>
                           {post.tags && post.tags.length > 0 && (
                             <Link href={`/tag/${post.tags[0].toLowerCase()}`} className="text-xs font-medium text-slate-600 hover:text-slate-900 transition-colors">
