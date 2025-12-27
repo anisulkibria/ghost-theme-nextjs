@@ -52,8 +52,8 @@ export default function BlogClient() {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 h-auto">
             {/* Main Feature (8 cols) */}
             {posts.length > 0 && posts[0] && (
-              <div className="lg:col-span-8 relative group rounded-2xl overflow-hidden cursor-pointer shadow-sm hover:shadow-md transition-all duration-500">
-                <Link href={`/blog/${posts[0].id}`} className="block relative w-full aspect-[16/9] md:aspect-[4/3]">
+              <Link href={`/blog/${posts[0].id}`} className="lg:col-span-8 relative group rounded-2xl overflow-hidden cursor-pointer shadow-sm hover:shadow-md transition-all duration-500 block">
+                <div className="relative w-full aspect-[16/9] md:aspect-[4/3]">
                   <Image
                     src={posts[0].image || 'https://images.unsplash.com/photo-1497215728101-856f4ea42174?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80'}
                     alt="Main Feature"
@@ -61,7 +61,7 @@ export default function BlogClient() {
                     width={1200}
                     height={675}
                   />
-                </Link>
+                </div>
 
                 {/* Floating Content Card */}
                 <div className="absolute bottom-0 left-0 w-full p-6 md:p-8">
@@ -82,14 +82,14 @@ export default function BlogClient() {
                     </p>
                   </div>
                 </div>
-              </div>
+              </Link>
             )}
 
             {/* Secondary Features (4 cols) */}
             <div className="lg:col-span-4 flex flex-col gap-6">
               {posts.length > 1 && posts.slice(1, 3).map((post, index) => (
-                <div key={post.id} className="relative flex-1 group rounded-2xl overflow-hidden cursor-pointer shadow-sm hover:shadow-md transition-all duration-500">
-                  <Link href={`/blog/${post.id}`} className="block relative w-full aspect-[16/9] md:aspect-[4/3]">
+                <Link key={post.id} href={`/blog/${post.id}`} className="relative flex-1 group rounded-2xl overflow-hidden cursor-pointer shadow-sm hover:shadow-md transition-all duration-500 block">
+                  <div className="relative w-full aspect-[16/9] md:aspect-[4/3]">
                     <Image
                       src={post.image || (index === 0 ? 'https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80' : 'https://images.unsplash.com/photo-1550745165-9bc0b252726f?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80')}
                       alt="Secondary Feature"
@@ -97,7 +97,7 @@ export default function BlogClient() {
                       width={800}
                       height={600}
                     />
-                  </Link>
+                  </div>
 
                   {/* Floating Content Card */}
                   <div className="absolute bottom-0 left-0 right-0 p-4 sm:p-5 z-20">
@@ -116,7 +116,7 @@ export default function BlogClient() {
                       </p>
                     </div>
                   </div>
-                </div>
+                </Link>
               ))}
             </div>
           </div>
