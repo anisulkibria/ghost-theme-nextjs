@@ -78,7 +78,7 @@ const themes = [
       '/images/theme1.webp'
     ],
     purchaseLink: 'https://shop.ghost-theme.com/buy/53df98aa-fd0b-4b2f-9898-ed34518dfffe',
-    demoLink: null
+    demoLink: 'https://theme9.ghost-theme.com'
   },
   {
     id: 'robotical',
@@ -112,7 +112,7 @@ const themes = [
       '/images/theme2.webp'
     ],
     purchaseLink: 'https://shop.ghost-theme.com/checkout/buy/bb22d463-329c-4ac1-a8c1-8cc2b0998309',
-    demoLink: 'https://robotical.ghost-theme.com'
+    demoLink: 'https://theme2.ghost-theme.com'
   },
   {
     id: 'writer',
@@ -146,7 +146,7 @@ const themes = [
       '/images/theme3.webp'
     ],
     purchaseLink: 'https://shop.ghost-theme.com/buy/7ea9304c-7797-4924-8223-36c6e9783f21',
-    demoLink: null
+    demoLink: 'https://theme8.ghost-theme.com'
   },
   {
     id: 'ylogger',
@@ -180,7 +180,7 @@ const themes = [
       '/images/theme4.webp'
     ],
     purchaseLink: 'https://shop.ghost-theme.com/checkout/buy/6b0ef9df-66ac-4819-9ab1-56955224a41a',
-    demoLink: 'https://ylogger.ghost-theme.com'
+    demoLink: 'https://theme7.ghost-theme.com'
   },
   {
     id: 'bloggie',
@@ -214,7 +214,7 @@ const themes = [
       '/images/theme5.jpg'
     ],
     purchaseLink: 'https://shop.ghost-theme.com/buy/96bf281d-23e3-4767-ae4c-c08180f8c369',
-    demoLink: 'https://bloggie.ghost-theme.com'
+    demoLink: 'https://theme3.ghost-theme.com'
   },
   {
     id: 'icelog',
@@ -248,7 +248,7 @@ const themes = [
       '/images/theme6.jpg'
     ],
     purchaseLink: 'https://shop.ghost-theme.com/buy/7b70e7fa-eb6b-4e2f-8995-3131920302a6',
-    demoLink: null
+    demoLink: 'https://theme6.ghost-theme.com'
   },
   {
     id: 'beguni',
@@ -282,7 +282,7 @@ const themes = [
       '/images/theme7.jpg'
     ],
     purchaseLink: 'https://shop.ghost-theme.com/buy/952c69cf-7325-4191-9583-a895ace77044',
-    demoLink: 'https://beguni.ghost-theme.com/'
+    demoLink: 'https://theme5.ghost-theme.com'
   },
   {
     id: 'acceler',
@@ -316,7 +316,7 @@ const themes = [
       '/images/theme8.jpg'
     ],
     purchaseLink: 'https://shop.ghost-theme.com/buy/d5cc9715-97ed-4e05-bfdc-0bee0bd5ed69',
-    demoLink: 'https://acceler.ghost-theme.com/'
+    demoLink: 'https://theme4.ghost-theme.com'
   },
   {
     id: 'asahi',
@@ -350,7 +350,7 @@ const themes = [
       '/images/theme9.webp'
     ],
     purchaseLink: 'https://shop.ghost-theme.com/buy/205518fe-3146-4bb5-ae04-4a076ab722f2',
-    demoLink: 'https://asahi.ghost-theme.com/'
+    demoLink: 'https://theme1.ghost-theme.com'
   }
 ];
 
