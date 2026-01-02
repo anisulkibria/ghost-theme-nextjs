@@ -19,7 +19,7 @@ const nextConfig = {
       },
     ],
   },
-  // Ensure fonts are properly served
+  // Ensure fonts and images are properly served
   async headers() {
     return [
       {
@@ -32,6 +32,15 @@ const nextConfig = {
           {
             key: 'Access-Control-Allow-Origin',
             value: '*',
+          },
+        ],
+      },
+      {
+        source: '/images/(.*)',
+        headers: [
+          {
+            key: 'Cache-Control',
+            value: 'public, max-age=0, must-revalidate',
           },
         ],
       },
