@@ -18,6 +18,13 @@ export interface Theme {
   demoLink?: string;
   createdAt?: string;
   updatedAt?: string;
+  // SEO fields
+  seoTitle?: string;
+  seoDescription?: string;
+  seoKeywords?: string[];
+  seoImage?: string;
+  ogType?: string;
+  noIndex?: boolean;
 }
 
 export interface BlogPost {
