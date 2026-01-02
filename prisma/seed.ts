@@ -59,10 +59,10 @@ const themes = [
     layout: '2 Columns',
     browsers: 'Chrome, Safari, Firefox',
     version: '1.2.0',
-    ghostVersion: '5.0+',
+    ghostVersion: '6.0+',
     seoTitle: 'Factum Ghost Theme - Premium Magazine Theme for Journalism & Publications',
     seoDescription: 'Discover Factum, a sophisticated Ghost CMS magazine theme designed for modern journalism. Features clean typography, multiple layouts, membership support, and exceptional reading experience across all devices.',
-    seoKeywords: ['Ghost theme', 'Ghost CMS magazine theme', 'journalism theme', 'publication theme', 'clean typography', 'responsive magazine', 'content-heavy publications', 'Ghost 5.0 theme', 'premium Ghost theme', 'modern blog theme'],
+    seoKeywords: ['Ghost theme', 'Ghost CMS magazine theme', 'journalism theme', 'publication theme', 'clean typography', 'responsive magazine', 'content-heavy publications', 'Ghost 6.0 theme', 'premium Ghost theme', 'modern blog theme'],
     seoImage: '/images/theme1.webp',
     ogType: 'website',
     noIndex: false,
@@ -99,10 +99,10 @@ const themes = [
     layout: 'Responsive',
     browsers: 'Chrome, Safari, Firefox',
     version: '1.2.0',
-    ghostVersion: '5.0+',
+    ghostVersion: '6.0+',
     seoTitle: 'Robotical Ghost Theme - Futuristic Tech Blog & Portfolio Theme',
     seoDescription: 'Robotical is a cutting-edge Ghost CMS theme for tech blogs and portfolios. Features dark mode, code syntax highlighting, portfolio layouts, and futuristic design perfect for innovation hubs.',
-    seoKeywords: ['Ghost theme', 'tech blog theme', 'portfolio theme', 'dark mode Ghost theme', 'code syntax highlighting', 'futuristic design', 'tech portfolio', 'Ghost 5.0 theme', 'developer theme', 'innovation hub theme'],
+    seoKeywords: ['Ghost theme', 'tech blog theme', 'portfolio theme', 'dark mode Ghost theme', 'code syntax highlighting', 'futuristic design', 'tech portfolio', 'Ghost 6.0 theme', 'developer theme', 'innovation hub theme'],
     seoImage: '/images/theme2.webp',
     ogType: 'website',
     noIndex: false,
@@ -139,10 +139,10 @@ const themes = [
     layout: 'Responsive',
     browsers: 'Chrome, Safari, Firefox',
     version: '1.2.0',
-    ghostVersion: '5.0+',
+    ghostVersion: '6.0+',
     seoTitle: 'Writer Ghost Theme - Minimalist Blog Theme for Authors & Writers',
     seoDescription: 'Writer is a minimalist Ghost CMS theme designed for authors and bloggers. Features clean typography, distraction-free reading, author-focused design, and perfect typography for content creators.',
-    seoKeywords: ['Ghost theme', 'minimalist theme', 'blog theme for writers', 'author theme', 'clean typography', 'distraction-free blog', 'Ghost 5.0 theme', 'writing theme', 'content creator theme', 'minimalist design'],
+    seoKeywords: ['Ghost theme', 'minimalist theme', 'blog theme for writers', 'author theme', 'clean typography', 'distraction-free blog', 'Ghost 6.0 theme', 'writing theme', 'content creator theme', 'minimalist design'],
     seoImage: '/images/theme3.webp',
     ogType: 'website',
     noIndex: false,
@@ -179,10 +179,10 @@ const themes = [
     layout: 'Responsive',
     browsers: 'Chrome, Safari, Firefox',
     version: '1.2.0',
-    ghostVersion: '5.0+',
+    ghostVersion: '6.0+',
     seoTitle: 'Ylogger Ghost Theme - Modern Blog with Familiar Layout',
     seoDescription: 'Ylogger combines traditional blog layouts with modern design. Perfect for personal blogs and small publications with widget-ready sidebars, multiple post formats, and clean professional appearance.',
-    seoKeywords: ['Ghost theme', 'modern blog theme', 'traditional blog layout', 'personal blog theme', 'widget-ready theme', 'sidebar theme', 'Ghost 5.0 theme', 'clean blog design', 'professional blog', 'small publication theme'],
+    seoKeywords: ['Ghost theme', 'modern blog theme', 'traditional blog layout', 'personal blog theme', 'widget-ready theme', 'sidebar theme', 'Ghost 6.0 theme', 'clean blog design', 'professional blog', 'small publication theme'],
     seoImage: '/images/theme4.webp',
     ogType: 'website',
     noIndex: false,
@@ -213,17 +213,17 @@ const themes = [
     fullDescription: 'Bloggie is optimized for speed and performance while maintaining a beautiful, modern appearance. Perfect for bloggers who prioritize both aesthetics and loading times.',
     price: 9,
     category: 'newsletter',
-    image: '/images/theme5.jpg',
+    image: '/images/bloggie.webp',
     featured: false,
     tags: ['High Performance'],
     layout: 'Responsive',
     browsers: 'Chrome, Safari, Firefox',
     version: '1.2.0',
-    ghostVersion: '5.0+',
+    ghostVersion: '6.0+',
     seoTitle: 'Bloggie Ghost Theme - Lightning Fast Performance Blog Theme',
     seoDescription: 'Bloggie is optimized for speed and performance with beautiful modern design. Features lightning-fast loading, SEO-friendly structure, mobile-first approach, and perfect for performance-focused bloggers.',
-    seoKeywords: ['Ghost theme', 'fast loading theme', 'performance optimized theme', 'SEO friendly theme', 'mobile-first blog', 'high performance Ghost theme', 'speed optimized', 'Ghost 5.0 theme', 'modern blog design', 'Core Web Vitals'],
-    seoImage: '/images/theme5.jpg',
+    seoKeywords: ['Ghost theme', 'fast loading theme', 'performance optimized theme', 'SEO friendly theme', 'mobile-first blog', 'high performance Ghost theme', 'speed optimized', 'Ghost 6.0 theme', 'modern blog design', 'Core Web Vitals'],
+    seoImage: '/images/bloggie.webp',
     ogType: 'website',
     noIndex: false,
     features: [
@@ -239,9 +239,9 @@ const themes = [
       'Google Fonts integration'
     ],
     screenshots: [
-      '/images/theme5.jpg',
-      '/images/theme5.jpg',
-      '/images/theme5.jpg'
+      '/images/bloggie.webp',
+      '/images/bloggie.webp',
+      '/images/bloggie.webp'
     ],
     purchaseLink: 'https://shop.ghost-theme.com/buy/96bf281d-23e3-4767-ae4c-c08180f8c369',
     demoLink: 'https://theme3.ghost-theme.com'
@@ -253,17 +253,17 @@ const themes = [
     fullDescription: 'Icelog brings a sense of calm and focus to your content with its minimal design and soothing color palette. Ideal for personal blogs and thoughtful writing.',
     price: 9,
     category: 'newsletter',
-    image: '/images/theme6.jpg',
+    image: '/images/icelog.webp',
     featured: false,
     tags: ['Focused Writing'],
     layout: 'Responsive',
     browsers: 'Chrome, Safari, Firefox',
     version: '1.2.0',
-    ghostVersion: '5.0+',
+    ghostVersion: '6.0+',
     seoTitle: 'Icelog Ghost Theme - Minimal & Calm Design for Thoughtful Writing',
     seoDescription: 'Icelog brings calm and focus with minimal design and soothing color palette. Perfect for personal blogs, thoughtful writing, distraction-free reading, and comfortable user experience.',
-    seoKeywords: ['Ghost theme', 'minimal design theme', 'calm blog theme', 'soothing color palette', 'personal blog theme', 'thoughtful writing theme', 'Ghost 5.0 theme', 'minimalist design', 'distraction-free', 'clean typography'],
-    seoImage: '/images/theme6.jpg',
+    seoKeywords: ['Ghost theme', 'minimal design theme', 'calm blog theme', 'soothing color palette', 'personal blog theme', 'thoughtful writing theme', 'Ghost 6.0 theme', 'minimalist design', 'distraction-free', 'clean typography'],
+    seoImage: '/images/icelog.webp',
     ogType: 'website',
     noIndex: false,
     features: [
@@ -279,9 +279,9 @@ const themes = [
       'Search functionality'
     ],
     screenshots: [
-      '/images/theme6.jpg',
-      '/images/theme6.jpg',
-      '/images/theme6.jpg'
+      '/images/icelog.webp',
+      '/images/icelog.webp',
+      '/images/icelog.webp'
     ],
     purchaseLink: 'https://shop.ghost-theme.com/buy/7b70e7fa-eb6b-4e2f-8995-3131920302a6',
     demoLink: 'https://theme6.ghost-theme.com'
@@ -299,10 +299,10 @@ const themes = [
     layout: 'Responsive',
     browsers: 'Chrome, Safari, Firefox',
     version: '1.2.0',
-    ghostVersion: '5.0+',
+    ghostVersion: '6.0+',
     seoTitle: 'Beguni Ghost Theme - Bold & Vibrant Photography Portfolio Theme',
     seoDescription: 'Beguni is a bold and vibrant Ghost CMS theme perfect for creative professionals, photographers, and artists. Features gallery layouts, portfolio showcases, high-resolution image support, and bold color schemes.',
-    seoKeywords: ['Ghost theme', 'photography theme', 'portfolio theme', 'creative theme', 'gallery theme', 'bold design', 'colorful theme', 'Ghost 5.0 theme', 'artist portfolio', 'high-resolution images'],
+    seoKeywords: ['Ghost theme', 'photography theme', 'portfolio theme', 'creative theme', 'gallery theme', 'bold design', 'colorful theme', 'Ghost 6.0 theme', 'artist portfolio', 'high-resolution images'],
     seoImage: '/images/theme7.jpg',
     ogType: 'website',
     noIndex: false,
@@ -339,10 +339,10 @@ const themes = [
     layout: 'Responsive',
     browsers: 'Chrome, Safari, Firefox',
     version: '1.2.0',
-    ghostVersion: '5.0+',
+    ghostVersion: '6.0+',
     seoTitle: 'Acceler Ghost Theme - Bootstrap 5 Portfolio & Business Theme',
     seoDescription: 'Acceler combines Bootstrap 5 with Ghost CMS for flexible customization. Perfect for portfolios and business websites with Bootstrap components, responsive grid, and highly customizable structure.',
-    seoKeywords: ['Ghost theme', 'Bootstrap theme', 'portfolio theme', 'business theme', 'Bootstrap 5 theme', 'customizable theme', 'Ghost 5.0 theme', 'component-based theme', 'responsive grid', 'business website'],
+    seoKeywords: ['Ghost theme', 'Bootstrap theme', 'portfolio theme', 'business theme', 'Bootstrap 5 theme', 'customizable theme', 'Ghost 6.0 theme', 'component-based theme', 'responsive grid', 'business website'],
     seoImage: '/images/theme8.jpg',
     ogType: 'website',
     noIndex: false,
@@ -379,10 +379,10 @@ const themes = [
     layout: 'Responsive',
     browsers: 'Chrome, Safari, Firefox',
     version: '1.2.0',
-    ghostVersion: '5.0+',
+    ghostVersion: '6.0+',
     seoTitle: 'Asahi Ghost Theme - Tailwind CSS Magazine Theme for Speed & Flexibility',
     seoDescription: 'Asahi is built with Tailwind CSS for maximum performance and customization. Perfect for modern magazines with ultra-fast performance, utility-first approach, highly customizable, and clean code structure.',
-    seoKeywords: ['Ghost theme', 'Tailwind CSS theme', 'magazine theme', 'fast performance theme', 'utility-first theme', 'customizable theme', 'Ghost 5.0 theme', 'modern magazine', 'clean code', 'production ready'],
+    seoKeywords: ['Ghost theme', 'Tailwind CSS theme', 'magazine theme', 'fast performance theme', 'utility-first theme', 'customizable theme', 'Ghost 6.0 theme', 'modern magazine', 'clean code', 'production ready'],
     seoImage: '/images/theme9.webp',
     ogType: 'website',
     noIndex: false,
@@ -494,11 +494,11 @@ const tags = [
 const blogPosts = [
   {
     id: 'whats-new-in-ghost-5',
-    title: "What's New in Ghost 5.0",
-    excerpt: 'Discover the latest features and improvements in Ghost 5.0, including enhanced performance, new themes, and improved developer experience.',
-    content: `## What's New in Ghost 5.0
+    title: "What's New in Ghost 6.0",
+    excerpt: 'Discover the latest features and improvements in Ghost 6.0, including enhanced performance, new themes, and improved developer experience.',
+    content: `## What's New in Ghost 6.0
 
-Ghost 5.0 brings a host of exciting new features and improvements that make it the best version yet. Let's dive into what makes this release special.
+Ghost 6.0 brings a host of exciting new features and improvements that make it the best version yet. Let's dive into what makes this release special.
 
 ## Performance Enhancements
 
@@ -512,7 +512,7 @@ The Ghost team has focused heavily on performance in this release. With improved
 
 ## New Theme Features
 
-Ghost 5.0 introduces powerful new theme capabilities that give developers more flexibility and control.
+Ghost 6.0 introduces powerful new theme capabilities that give developers more flexibility and control.
 
 ### Theme Highlights:
 - Enhanced custom template support
@@ -532,7 +532,7 @@ We've made significant improvements to the developer experience with better tool
 
 ## Conclusion
 
-Ghost 5.0 represents a significant step forward in the evolution of the platform. Whether you're a content creator, developer, or site owner, there's something in this release for you.`,
+Ghost 6.0 represents a significant step forward in the evolution of the platform. Whether you're a content creator, developer, or site owner, there's something in this release for you.`,
     readTime: '5 min read',
     category: 'Technology',
     image: '/images/blog-post-5.jpg',
@@ -2544,7 +2544,7 @@ const pages = [
     
     <h3>What version of Ghost do I need?</h3>
     <p>
-      Our themes are compatible with Ghost 5.0 and above. We regularly update our themes to ensure compatibility with the latest Ghost releases.
+      Our themes are compatible with Ghost 6.0 and above. We regularly update our themes to ensure compatibility with the latest Ghost releases.
     </p>
     
     <h2>Customization & Support</h2>

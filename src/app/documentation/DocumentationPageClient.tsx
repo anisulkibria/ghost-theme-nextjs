@@ -48,8 +48,8 @@ export default function DocumentationPageClient() {
     { id: 'robotical', name: 'Robotical', image: '/images/theme2.webp', category: 'Tech & Portfolio' },
     { id: 'writer', name: 'Writer', image: '/images/theme3.webp', category: 'Minimalist Writing' },
     { id: 'ylogger', name: 'Ylogger', image: '/images/theme4.webp', category: 'Video & Blog' },
-    { id: 'bloggie', name: 'Bloggie', image: '/images/theme5.jpg', category: 'Fast & Modern' },
-    { id: 'icelog', name: 'Icelog', image: '/images/theme6.jpg', category: 'Minimal' },
+    { id: 'bloggie', name: 'Bloggie', image: '/images/bloggie.webp', category: 'Fast & Modern' },
+    { id: 'icelog', name: 'Icelog', image: '/images/icelog.webp', category: 'Minimal' },
     { id: 'beguni', name: 'Beguni', image: '/images/theme7.jpg', category: 'Creative & Photography' },
     { id: 'acceler', name: 'Acceler', image: '/images/theme8.jpg', category: 'Bootstrap & Business' },
     { id: 'asahi', name: 'Asahi', image: '/images/theme9.webp', category: 'Tailwind & Magazine' }

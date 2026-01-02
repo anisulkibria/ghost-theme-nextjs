@@ -297,7 +297,7 @@ export default function ThemePageClient({ params }: { params: Promise<{ slug: st
                   <div className="border border-slate-200 rounded-xl overflow-hidden">
                     <details className="group">
                       <summary className="flex justify-between items-center font-medium cursor-pointer list-none p-6 bg-slate-50 text-slate-900 hover:bg-slate-100 transition-colors">
-                        <span>Is this theme compatible with Ghost 5.0?</span>
+                        <span>Is this theme compatible with Ghost 6.0?</span>
                         <span className="transition group-open:rotate-180">
                           <svg fill="none" height="24" shapeRendering="geometricPrecision" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" viewBox="0 0 24 24" width="24">
                             <path d="M6 9l6 6 6-6"></path>
@@ -305,7 +305,7 @@ export default function ThemePageClient({ params }: { params: Promise<{ slug: st
                         </span>
                       </summary>
                       <div className="text-slate-600 p-6 pt-0 bg-slate-50 border-t border-slate-100">
-                        <p>Yes, this theme is fully compatible with the latest version of Ghost (5.0+)
+                        <p>Yes, this theme is fully compatible with the latest version of Ghost (6.0+)
                           and takes advantage of all the newest features.</p>
                       </div>
                     </details>
